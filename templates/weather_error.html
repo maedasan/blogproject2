@@ -1,0 +1,44 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block header %}
+<head>
+    <link rel='stylesheet' type="text/css" href="{% static 'style.css' %}">
+</head>
+{% endblock header %}
+
+{% block content %}
+<body class="body-6">
+    <div class="container col-lg-6 offset-lg-3">
+        <h3 class="weather-title">Weather 🌤 Forecast☃</h3> 
+        {% if error %}
+        <h3 class="weather-error">{{ error }}</h3>
+        {% endif %}
+        <div class="btn-reverse">
+            <a href="{% url 'weathapp:weather' %}"class="btn btn-primary">検索へ戻る</a>
+        </div>
+    </div>
+
+<div class="weather-error2">
+    <p>次のようになっていませんか？</p>
+    <table class="table table-bordered table-hover table-light">
+        <tr>
+            <th>NG</th>
+            <th>OK</th>
+        </tr>
+        <tr>
+            <td>大阪</td>
+            <td>大阪市</td>
+        </tr>
+        <tr>
+            <td>oosaka</td>
+            <td>osaka</td>
+        </tr>
+        <tr>
+            <td>kisiwada</td>
+            <td>kishiwada</td>
+        </tr>
+    </table>
+</div>
+</body>
+{% endblock content %}

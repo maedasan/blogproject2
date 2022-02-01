@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+<head>
+  <link rel= 'stylesheet' type= "text/css" href= "{% static 'style.css' %}">
+</head>
+{% endblock header %}
+
+
+{% block content %}
+<body class="list-body"></body>
+
+<div class="bg_test">
+  <div class="bg_test-text">
+      <p class="blog-title1">Welcome to</p>
+      <p class="blog-title2">the diary</p>
+  </div>
+</div>
+<div class="container col-lg-6 offset-lg-3">
+    <p class="itiran">記事一覧</p>
+</div>
+<div class="btn-create">
+  <a href="{% url 'blogapp:create_form' %}" class="btn btn-primary">記事を作成する</a>
+</div>
+<div class="btn-logout">
+  <a href="{% url 'blogapp:logout' %}" class="btn btn-primary">ログアウト</a>
+</div>
+<div class="link-weather">
+  <a href="{% url 'weathapp:weather' %}" target="_blank"><img src="/static/tenki23.jpg" alt="天気予報"></a>
+</div>
+
+
+  {% for item in object_list reversed %}
+    <div class="container col-lg-6 offset-lg-3">
+      <div class="card">
+        <h5 class="card-header">{{ item.title }}</h5>
+        <div class="card-body">
+          <h5 class="card-title">投稿者 : {{ item.author }}</h5>
+          <h5 class="card-title">いいね💛した人 : {{ item.useful_review }}人</h5>
+          <h5 class="card-title">コメント数 : {{ item.useful_comment }}回</h5>
+          <h6 class="card-title">{{ item.postdate }}</h6>
+          <a href="{% url 'blogapp:detail' item.pk %}" class="btn btn-primary">記事を見る</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  <a href="#" id="page-top1">TOP</a>
+</div>
+{% endblock content %}

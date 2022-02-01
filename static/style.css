@@ -1,0 +1,347 @@
+/******************************* ブログ用 始まり *************************/
+
+/**********  一覧画面  始まり  　***************/
+.card{
+    margin-bottom : 30px;
+    position: relative;
+    bottom: 80px;
+}
+
+.bg_test-text {
+    /*border:  solid 1px;                             /* 枠線指定 */
+    /*display:  inline-block;                         /* インラインブロックにする */
+    /*padding: 10px 20px;                             /* 余白指定 */
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    font-family: 'Sacramento', cursive;
+    color: #3dc4db;
+    font-size: 370%;
+    position: relative;
+    bottom:  0px;
+    right: 0px;
+}
+
+.blog-title1{
+    position: relative;
+    top: 65px;
+    left: 260px;
+}
+
+.blog-title2{
+    position: relative;
+    top: 30px;
+    left: 450px;
+    color: #f3b7b7;
+}
+
+.bg_test {
+    text-align:  center;
+    padding:  150px;
+    border: solid 1px;
+}
+.bg_test {
+    background-image: url('/static/river1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+
+.list-body{
+    background: #eef0a0;
+    font-family: "Kokoro";
+    font-size: 120%;
+}
+
+.btn-create{
+    position: relative;
+    bottom: 40px;
+    left: 350px;
+}
+
+.btn-logout{
+    position: relative;
+    bottom: 80px;
+    left: 1200px;
+}
+
+.btn-login{
+    position: relative;
+    bottom: 40px;
+    left: 1090px;
+}
+
+.btn-signup{
+    position: relative;
+    bottom: 78px;
+    left: 1215px;
+}
+
+.btn-weath{
+    position: relative;
+    top: 30px;
+    left: 1150px;
+
+}
+
+.itiran{
+    position: relative;
+    top: 20px;
+    right: 300px;
+    font-size: 150%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.card-header{    /*listとdetail兼用*/
+    font-size: 110%;
+    font-weight: bold;
+    font-family: "Hannari";
+}
+
+.link-weather{    /*****  バーナーリンク  *****/
+    position: relative;
+    bottom: 30px;
+    left: 1050px;
+    height: 10px;
+}
+
+
+/**********  一覧画面  終わり  　***************/
+
+/**********  詳細画面  始まり  　***************/
+.body-3{    /*detail   create  update 兼用*/
+    background: #afeeee
+}
+
+.body-4{    /* comment */
+    background: #f8d1ee;
+}
+
+.body-5{    /*  delete  */
+    background-image: url("/static/yoru5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 500px;
+}
+
+
+.detail-form{
+    background: #ffffff;
+    margin-top: 2em;
+    margin-bottom : 30px;
+    width: 1000px;
+    position: relative;
+    left: 65px;
+}
+
+
+.detail-image img{
+    position: relative;
+    left: 70px;
+    top: 0px;
+    width: 375px;
+}
+
+.detail-content{
+    position: relative;
+    left: 80px;
+    width: 800px;
+}
+
+.detail-btn1{
+    position: relative;
+    left: 180px;
+}
+
+.detail-btn2{
+    position: relative;
+    left: 70px;
+}
+
+.detail-btn3{
+    position: relative;
+    left: 80px;
+}
+/**********  詳細画面  終わり  　***************/
+
+.create-form{
+    width: 500px;
+}
+
+
+/******************************* ブログ用 終わり *************************/
+
+
+/********** 天気アプリ用 始まり ***************/
+.body-1{
+    font-family: "Kokoro";
+    font-size: 120%;
+    background: #afeeee;
+}
+
+.body-2{
+    background: #afeeee;
+}
+
+.body-6{
+    background: #f8c9c9;
+}
+
+
+.weather-title{
+    font-family: 'Sacramento', cursive;
+    color: #5f5e5e;
+    font-size: 300%;
+    position: relative;
+    top: 25px;
+    right: 30px;
+}
+
+.weather-form{
+    position: relative;
+    top: 70px;
+    left: 60px;
+}
+
+.chuui{
+    position: relative;
+    top: 30px;
+}
+.chuui-2{
+    position: relative;
+    left: 80px;
+}
+
+.btn-search {
+    position: relative;
+    bottom: 140px;
+    left: 400px;
+}
+
+.btn-reverse{
+    position: relative;
+    top: 400px;
+    left: 350px;
+}
+
+.btn-weather-csv{
+    position: relative;
+    top: 165px;
+    left: 1070px;
+}
+
+.weather-error{
+    position: relative;
+    top: 100px;
+    right: 20px;
+    color: rgb(255, 0, 0);
+    font-weight: 750;
+    font-size: 200%;
+    text-shadow:1px 1px 3px rgb(247, 223, 223);
+    width: 700px;
+}
+
+.weather-error2{
+    background: white;
+    width: 700px;
+    position: relative;
+    left: 370px;
+    top: 100px;
+    width: 500px;
+    border: solid 1px;
+}
+
+
+
+/* output1day  output5day で使用*/
+.kekka-title{
+    font-family: 'Sacramento', cursive;
+    color: #5f5e5e;
+    font-size: 220%;
+    position: relative;
+    top: 15px;
+    left: 170px;
+}
+
+/* output1day  output5day で使用*/
+.row{
+    position: relative;
+    top: 15px;
+    left: 0px;
+}
+/********** 天気アプリ用 終わり ***************/
+
+
+/***追従するトップへ戻るボタン***/
+#page-top1 {
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: #737373;
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+}
+#page-top1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
+/***トップへ戻るボタンここまで***/
+
+
+/************* create  update  delete  comment ボタン関係  始まり ***********/
+
+
+.cancel-btn{
+    position: relative;
+    left:  45px;
+    bottom: 10px;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(45deg, #e73956 0%, #e0613a 100%);
+    transition: .4s;
+}
+
+.submit-btn{
+    position: relative;
+    left: 275px;
+    top: 25px;
+}
+
+
+/************* create  update  delete  comment ボタン関係  終わり ***********/
+
+/***********削除画面 *****************/
+.messege-delete{
+    position: relative;
+    left: 750px;
+    top: 200px;
+    color: rgb(255, 255, 255);
+}
+
+.delete-btn{
+    position: relative;
+    left: 865px;
+    top: 60px;
+}
+
+.cancel-btn1{
+    position: relative;
+    left: 765px;
+    top: 250px;
+}

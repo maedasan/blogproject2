@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+<head>
+    <link rel= 'stylesheet' type= "text/css" href= "{% static 'style.css' %}">
+</head>
+{% endblock header %}
+
+{% block content %}
+<body class="body-3">
+    <div class='container'>
+        <div class="detail-form">
+            <h5 class="card-header">{{ detail_object.title }}</h5>
+            <div class="card-body">
+                <div class="detail-image">
+                    <img src="{{detail_object.images.url}}">
+                </div>
+                <div class="detail-content">
+                    <p class="card-text">{{ detail_object.content | linebreaks | urlize  }}</p>
+                </div>
+                <div class="detail-btn3">
+                    <a href="{% url 'blogapp:no_login_list' %}" class="btn btn-primary">一覧へ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="container col-lg-6 offset-lg-3">
+    <h3 class="comment-title">コメント欄</h3>
+    {% for comment in detail_object.comment_set.all %}
+    <div class="comment-list">
+
+        <div class='border-bottom'>No.{{ comment.number }}  {{ comment.user_name }}　{{ comment.created_at }}</div>
+
+            <div class='mt-2'>{{ comment.message | linebreaks | urlize }}</div>
+            <div >ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+    </div>
+    {% empty %}
+    <p>コメントはありません</p>
+    {% endfor %}
+</div>
+</body>
+{% endblock content %}
